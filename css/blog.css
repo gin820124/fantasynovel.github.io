@@ -1,0 +1,460 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	}
+/*nav-bar*/
+.nav-bar{
+	background: #fff;
+	position: fixed;
+	color: rgba(0,0,0,.6);
+	list-style:none;
+	box-shadow:0 0 8px 0 rgba(0,0,0,.15);
+	margin-bottom: 5px;
+	z-index: 1000;
+}
+
+.nav-bar a{
+	color: rgba(0,0,0,.6);
+	text-decoration: none;
+}
+
+
+/*上方選單*/
+
+.menu{
+	line-height: 50px;
+	font-size: 20px;
+}
+
+.menu .logo{
+	display: inline-block;
+}
+
+.menu ul li,
+.menu ul{
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+
+.ulText li{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Nico Moji";
+	position: relative;
+}
+
+.liText:hover, .liText li:hover{
+	color: #EB7A77;
+	cursor: pointer;
+}
+
+ul.ulText li.liText:first-child{
+	color: #EB7A77;
+}
+
+.blog{
+	color: #EB7A77;
+}
+
+/*滑鼠移到menu上的字樣時子選單要出現*/
+.liText:hover ul.ulTextMenu, .ulTextMenu:hover{
+	display:block;
+}
+
+.dropMenu ul, .ulText1menu ul, .ulText2menu ul, .ulText3menu ul{
+	list-style: none;
+	padding-left: 10px;
+}
+
+.menu ul .ulTextMenu{
+	width: 180px;
+	height: auto;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	display: none;
+	z-index: 10px;
+	transition: top 0.3s;
+	font-size: 14px;
+	line-height: 24px;
+
+}
+
+.menu ul .ulTextMenu li{
+	padding: 5px;
+	display: block;
+}
+
+.menu ul .ulTextMenu-collapsed{
+	display: block;
+    list-style: none;
+}
+
+#search{
+	width: 100%;
+    position: relative;
+    padding: 10px;
+    float:right;
+}
+
+#search input{
+	width: calc(100% - 20px) ;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #EB7A77;
+	background: #fff;
+}
+
+.button-search{
+	position: absolute;
+	top: 16px;
+	right: 40px;
+	border: none;
+	background: transparent;
+	color: #EB7A77;
+}
+
+/*漢堡下拉選單按鍵*/
+.drop{
+	position: absolute;
+	top: 16px;
+	border: none;
+	background: transparent;
+	color: #EB7A77;
+}
+
+.dropMenu{
+	font-size: 20px;
+	line-height: 2;
+	text-align: center;
+	letter-spacing: 3px;
+	width: 100vw;
+	height: auto;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: -137px;
+	z-index: 10;
+	transition: top 0.3s;
+
+}
+
+.dropMenu-collapsed{
+	top: 50px;
+    list-style: none;
+}
+
+/*Banner1*/
+
+.headlineImg{
+	position: static;
+	height: 650px;	
+	background:  url(../img/prada.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.bannerText{
+	width: 600px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: transparent;
+}
+
+.hTitle{
+	position: absolute;
+	top: 395px;
+	color: #fff;
+	text-shadow: 0px 0px 10px #888;
+	font-size: 28px;
+	transform: translateX(-50%);
+    left: 50%;
+    white-space: nowrap;
+
+	}
+.headline{
+	position: absolute;
+	background: #F17C67;
+	top: 240px;
+	color: #fff;
+	letter-spacing: 3px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.headline h3{
+	margin: 10px;
+	text-align: center;
+	font-size: 28px;
+}
+
+
+
+/*部落格文章*/
+.articles{
+	margin-top: 10px;
+	background: #fff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.card{
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.cardText h4{
+	color: #fff;
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 120px;
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-shadow: 0px 0px 10px #888;
+}
+
+.cardText p{
+	color: #fff;
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 180px;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-shadow: 0px 0px 8px #000;
+}
+
+.img1{
+		height: 100%;
+		width: auto;
+		background: url(../img/prada2.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		
+
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+	-webkit-background-size: auto 110%;
+	background-size: auto 110%;
+	transition: all .5s ease-in;
+}
+
+.img2{
+		height: 100%;
+		width: 100%;
+		background: url(../img/華山.jpg);
+		background-position: center;
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+		box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+		border-radius: 5px;
+
+}
+
+.img3{
+		height: 100%;
+		width: 100%;
+		background: url(../img/台北機廠4.jpg);
+		background-position: center;
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+
+}
+
+/*更多文章前的banner*/
+.banner2{
+	height: 300px;
+	margin-bottom: 0px;
+
+}
+
+.b2Img{
+	height: 300px;
+	background-image: url(../img/cropsyard1.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+
+/*更多文章*/
+.feed{
+	margin-bottom: 10px;
+	text-align: center;
+	background: rgba(241, 148, 131, .3);
+}
+
+
+/*footer*/
+
+.footer{
+	margin-top: 10px;
+	background: rgba(251, 150, 110, 0.08);
+	text-align: center;
+}
+
+.footLogo{
+	position: relative;
+    top: 45px;
+    left: -10px;
+}
+
+.sitemap{
+	text-align: left;
+}
+
+.sitemap ul{
+	display: inline-block;
+	list-style: none;
+	padding: 15px 60px 5px 0;
+	line-height: 1.8;
+	vertical-align: top;
+}
+
+.sitemap li:first-child{
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.sitemap li, .sitemap a{
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	text-decoration: none;
+
+}
+
+.sitemap a:hover{
+	color: #EB7A77;
+}
+
+
+
+/*平版*/
+@media (max-width: 767px) {
+	.ulText{
+		display: none;
+	}
+
+	.drop{
+	   right: 50%;
+	}
+
+	.headlineImg{
+	/*absolute和fixed都是不佔空間的*/
+	height: 300px;
+	}
+
+	.bannerText{
+		position: absolute;
+		width: 400px;
+		top: 300px;
+    	left: 50%;
+    	transform: translateX(-50%);
+
+	}
+	.hTitle{
+	position: absolute;
+	top: 168px;
+    right: -26px;
+	border: transparent;
+	font-size: 20px;
+	text-align: center;
+	white-space: nowrap;
+	}
+
+	.headline{
+	position: absolute;
+	background: #F17C67;
+	top: 90px;
+	color: #fff;
+	letter-spacing: 3px;
+    right: 15%;
+    white-space: nowrap;
+    width: 247px;
+	}
+
+	.headline h3{
+	margin: 5px;
+	text-align: center;
+	font-size: 18px;
+	}
+	
+	.box1{
+	margin: 0px auto;
+	}
+	
+	.footer{
+	margin-top: 5px;
+	}
+
+	.footLogo{
+	display: none;
+	}
+}
+
+/*平板*/
+@media (min-width: 767px) and (max-width: 992px){
+	
+
+}
+
+/*手機*/
+@media (max-width: 480px) {
+	/*nav-bar icon*/
+	.temple {
+		height: 20px;
+	}
+	
+	.logoText{
+		width: 100px;
+		height: 16px;
+	}
+
+	.bannerText{
+		position: absolute;
+		width: 300px;
+		top: 125px;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+	
+	.hTitle{
+		color: #fff;
+		text-shadow: 0px 0px 10px #888;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 10px;
+		left: 13%;
+    	transform: translateX(-50%);
+
+	}
+	
+}
+
+
+
+

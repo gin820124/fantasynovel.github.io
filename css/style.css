@@ -1,0 +1,767 @@
+*{
+	padding: 0;
+	margin: 0;
+	transition: all .2s;
+}
+
+
+.container{
+	width: 100%;
+	}
+/*nav-bar*/
+.nav-bar{
+	background: #fff;
+	position: fixed;
+	color: rgba(0,0,0,.6);
+	list-style:none;
+	box-shadow:0 0 8px 0 rgba(0,0,0,.15);
+	margin-bottom: 5px;
+	z-index: 1000;
+}
+
+.nav-bar a{
+	color: rgba(0,0,0,.6);
+	text-decoration: none;
+}
+
+
+/*上方選單*/
+
+.menu{
+	line-height: 50px;
+	font-size: 20px;
+}
+
+.menu .logo{
+	display: inline-block;
+}
+
+.menu ul li,
+.menu ul{
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+
+.ulText li{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Nico Moji";
+	position: relative;
+}
+
+.liText:hover, .liText li:hover, .blog:hover{
+	color: #EB7A77;
+	cursor: pointer;
+}
+
+/*滑鼠移到menu上的字樣時子選單要出現*/
+.liText:hover ul.ulTextMenu, .ulTextMenu:hover{
+	display:block;
+}
+
+.dropMenu ul, .ulText1menu ul, .ulText2menu ul, .ulText3menu ul{
+	list-style: none;
+	padding-left: 10px;
+}
+
+.menu ul .ulTextMenu{
+	width: 180px;
+	height: auto;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	display: none;
+	z-index: 10px;
+	transition: top 0.3s;
+	font-size: 14px;
+	line-height: 24px;
+
+}
+
+.menu ul .ulTextMenu li{
+	padding: 5px;
+	display: block;
+}
+
+.menu ul .ulTextMenu-collapsed{
+	display: block;
+    list-style: none;
+}
+
+
+#search{
+	width: 100%;
+    position: relative;
+    padding: 10px;
+    float:right;
+}
+
+#search input{
+	width: calc(100% - 20px) ;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #EB7A77;
+	background: #fff;
+}
+
+.button-search{
+	position: absolute;
+	top: 16px;
+	right: 40px;
+	border: none;
+	background: transparent;
+	color: #EB7A77;
+}
+
+/*漢堡下拉選單按鍵*/
+.drop{
+	position: absolute;
+	top: 16px;
+	border: none;
+	background: transparent;
+	color: #EB7A77;
+}
+
+.dropMenu{
+	font-size: 20px;
+	line-height: 2;
+	text-align: center;
+	letter-spacing: 3px;
+	width: 100vw;
+	height: auto;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: -137px;
+	z-index: 10;
+	transition: top 0.3s;
+
+}
+
+.dropMenu-collapsed{
+	top: 50px;
+    list-style: none;
+}
+
+
+/*Banner*/
+
+.bannerImg{
+	position: static;
+	height: 650px;	
+	background:  url(../img/靜態桌布月曆-07.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
+.bannerImg:hover{
+	position: static;
+	height: 650px;	
+	background:  url(../img/靜態桌布月曆-03.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
+
+.bannerContent{
+	position: absolute;
+	top: 177px;
+    right: 51px;
+	border: transparent;
+}
+
+#owl-demo .item, #owl-dwmo {
+    display: block;
+}
+
+
+
+
+/*使用說明*/
+.manual{
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	background: #F19483;
+	height: auto;
+	text-align: center;
+}
+
+.title{
+	padding-top: 10px;
+	width: 170px;
+}
+
+.intro, .intro2, .intro3{
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+	border-radius: 50%;
+}
+
+.manual h4{
+	font-size: 18px;
+	color: #9F353A;
+}
+
+.manual p{
+	font-size: 16px;
+	color: #fff;
+}
+
+/*文章*/
+.articles{
+	margin-top: 10px;
+	background: #fff;
+	text-align: center;
+}
+
+.card{
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.cardText h4{
+	color: #fff;
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 120px;
+	font-size: 36px;
+	letter-spacing: 3px;
+	text-shadow: 0px 0px 10px #888;
+}
+
+.img1{
+		height: 100%;
+		width: 100%;
+		background: url(../img/台博館.jpg);
+		background-position: center;
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		
+
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+	-webkit-background-size: auto 110% ;
+	background-size: auto 110%;
+	transition: all .2s ease-in;
+}
+
+.img2{
+		height: 100%;
+		width: 100%;
+		background: url(../img/世界遺產潛力點.jpg);
+		background-position: center;
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+		box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+		border-radius: 5px;
+
+}
+
+.img3{
+		height: 100%;
+		width: 100%;
+		background: url(../img/世界遺產.jpg);
+		background-position: center;
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+
+}
+
+
+/*探索文化資產*/
+.explore{
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	background: rgba(255, 186, 132, 0.3);
+	height: auto;
+	text-align: center;
+}
+
+.search-box{
+	margin-top:10px;
+	line-height: 46px;
+	margin-bottom: 10px;
+
+}
+
+.search-box button{
+	color: #333;
+    background-color: #fff;
+    border: 1px solid rgba(255, 186, 132, 0.3);
+    border-radius: 5px;
+    padding: 7px 16px;
+    font-size: 16px;
+    margin-right: 5px;
+    line-height: 1.42857143;
+}
+
+
+
+.search-box button:hover{
+	color: #fff;
+    background-color: #EB7A77;
+}
+
+.search-box .selected{
+	color: #fff;
+    background-color: #EB7A77;
+    border: 1px solid rgba(255, 186, 132, 0.3);
+    border-radius: 5px;
+    padding: 7px 16px;
+    font-size: 16px;
+    margin-right: 5px;
+    line-height: 1.42857143;
+}
+
+.search-place{
+	margin-bottom: 15px;
+}
+
+[name=city]{
+	width: 15%;
+	margin-right: 8px;
+    margin-top: 0;
+    font-size: 16px;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    height: 30px;
+}
+
+[name=county]{
+	width: 15%;
+	margin-right: 8px;
+    margin-top: 0;
+    font-size: 16px;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    height: 30px;
+}
+
+[name=category]{
+	width: 30%;
+    margin-top: 0;
+    font-size: 16px;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    height: 30px;
+}
+
+.form{
+	margin-top: 15px;
+}
+
+#typeSEO{
+	width: 40%;
+	font-size: 16px;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    height: 30px;
+}
+
+hr{
+	margin: 15px 140px 0 140px;
+	border: 2px solid rgba(235, 122, 119, 0.3);
+}
+
+.submit{
+	margin-top: 15px;
+}
+
+.submit input{
+	text-align: center;
+    padding: 2px 15px 2px 15px;
+    overflow: hidden;
+    color: #fff;
+    line-height: 200%;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 4px;
+    background: #eb7a77;
+}
+
+.submit input:hover{
+    color: #fff;
+    background: #F19483;
+}
+
+/*熱門文化資產*/
+.hot{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.hot p{
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.box, .boxA{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.box1, .box2{
+	/*width: 280px;*/
+	height: 320px;
+	border-radius: 4px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+	transition: all .5s;
+	margin: 0px auto;
+	transition: all .3s ease-in;
+}
+
+.box1:hover, .box2:hover{
+	transform: translateY(-10px);	
+}
+
+/*旁邊滑進來的*/
+.show1{
+	position: absolute;
+	left: 0;
+}
+
+
+.show2{
+	position: absolute;
+	left: 100%;
+}
+
+.show-wrap{
+	height: 333px;	
+	overflow: hidden;
+}
+
+
+.left-button button, .right-button button{
+	border:none;
+	background: transparent;
+	font-size: 36px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.left-button{
+	position: relative;
+    color: #888;
+    height: 320px;
+}
+
+.right-button{
+	position: relative;
+    color: #888;
+    height: 320px;
+    float:right;
+    display: block;
+}
+.hiddenMe{
+	display: none;
+}
+
+
+
+/*牌卡圖文*/
+.boxImg1{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/齊東詩社.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxText h4{
+	font-size: 17px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	color:#666;
+}
+
+.boxText span{
+	color:#F17C67;
+}
+
+.boxText p{
+	padding-left: 15px;
+	font-size: 14px;
+	text-align: left;
+	margin: 0 0 5px;
+}
+
+.boxImg2{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/台北賓館.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg3{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/鐵道部.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg4{
+	   /* width: 280px;*/
+		height: 160px;
+		background: url(../img/柳原教會.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg5{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/好樣文房.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg6{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/華山2.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg7{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/林百貨.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+.boxImg8{
+	    /*width: 280px;*/
+		height: 160px;
+		background: url(../img/台中放送局.jpg);
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;	
+}
+
+
+/*footer*/
+
+.footer{
+	margin-top: 10px;
+	background: rgba(251, 150, 110, 0.08);
+	text-align: center;
+}
+
+.footLogo{
+	position: relative;
+    top: 45px;
+    left: -10px;
+}
+
+.sitemap{
+	text-align: left;
+}
+
+.sitemap ul{
+	display: inline-block;
+	list-style: none;
+	padding: 15px 60px 5px 0;
+	line-height: 1.8;
+	vertical-align: top;
+}
+
+.sitemap li:first-child{
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.sitemap li, .sitemap a{
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	text-decoration: none;
+
+}
+
+.sitemap a:hover{
+	color: #EB7A77;
+}
+
+/*平版*/
+@media (max-width: 767px) {
+	.ulText{
+		display: none;
+	}
+
+	.drop{
+	   right: 50%;
+	}
+
+	.bannerImg{
+	/*absolute和fixed都是不佔空間的*/
+	height: 300px;
+	}
+
+	.bannerImg:hover{
+	position: static;
+	height: 300px;	
+	}
+
+	.bannerText{
+		width: 200px;
+	}
+	.bannerContent{
+	position: absolute;
+	top: 177px;
+    right: 257px;
+	border: transparent;
+	}
+
+	.manual{
+	width: 100%;
+	margin-top: 5px;
+	}
+
+	.title{
+	padding-top: 0;
+	width: 120px;
+	}
+	
+	.explore{
+	width: 100%;
+	margin-top: 5px;
+	}
+
+	.title2{
+	padding-top: 0;
+	width: 160px;	
+	}
+
+	.search-place{
+	position: relative;
+	left: 25%;
+	}
+
+	[name=city]{
+	position: static;
+	width: 150px;
+    margin-bottom: 15px;
+	}
+
+	[name=county]{
+	width: 150px;
+	}
+	
+	[name=category]{
+	width: 170px;
+	}
+
+	#typeSEO{
+	width: 60%;
+	}
+	
+	hr{
+	margin: 15px 40px 0 40px;
+	}
+
+	.box1{
+	margin: 0px auto;
+	}
+	
+	.footer{
+	margin-top: 5px;
+	}
+
+	.footLogo{
+	display: none;
+	}
+
+	.show1{
+	position: relative;
+	left: 0;
+	}
+
+
+	.show2{
+	position: relative;
+	left: 0;
+	}
+
+	.show-wrap{
+	height: auto;	
+	}
+}
+
+/*平板*/
+@media (min-width: 767px) and (max-width: 992px){
+	
+
+}
+
+/*手機*/
+@media (max-width: 480px) {
+	/*nav-bar icon*/
+	.temple {
+		height: 20px;
+	}
+	
+	.logoText{
+		width: 100px;
+		height: 16px;
+	}
+	
+	.show1{
+	position: relative;
+	left: 0;
+	}
+
+
+	.show2{
+	position: relative;
+	left: 0;
+	}
+
+.show-wrap{
+	height: auto;	
+	}
+	
+}
+
+
+
+

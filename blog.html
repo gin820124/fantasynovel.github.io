@@ -84,9 +84,9 @@
 	 			<button type="button" class="drop"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 	 			<div class="dropMenu">
 	 				<ul>
-	 					<li>文化資產</li>
-	 					<li>最新資訊</li>
-	 					<li>相關資源</li>
+	 					<li><a href="#F">文化資產</a></li>
+	 					<li><a href="#F">最新資訊</a></li>
+	 					<li><a href="#F">相關資源</a></li>
 	 				</ul>
 	 			</div>
 	 		</div> 
@@ -170,7 +170,7 @@
 						<span><img src="img/chinese-temple.svg" alt="" width="40px"> <img src="img/logo.png" alt="" width="140px"></span>
 					</a>
 				</div>
-				<div class="sitemap col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="sitemap col-lg-8 col-md-8 col-sm-12 col-xs-12" id="F">
 					<ul>
 						<li class="foot">文化資產</li>
 						<li><a href="index.html#D">探索文化資產</a></li>
@@ -215,9 +215,11 @@
 	<!-- jQuery -->
 	<script>
 	$('.drop').click(function(){
-		console.log("111")
 		$('.dropMenu').toggleClass('dropMenu-collapsed');
-	});
+		});
+		$('.dropMenu a').click(function(){
+		$('.dropMenu').removeClass('dropMenu-collapsed')
+		});
 	</script>
 </body>
 </html>

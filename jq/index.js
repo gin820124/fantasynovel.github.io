@@ -6,8 +6,10 @@ $('li.liText').click(function(){
 
 // 平板以下漢堡下拉選單
 $('.drop').click(function(){
-	// console.log("111")
-$('.dropMenu').toggleClass('dropMenu-collapsed');
+	$('.dropMenu').toggleClass('dropMenu-collapsed');
+});
+$('.dropMenu a').click(function(){
+	$('.dropMenu').removeClass('dropMenu-collapsed')
 });
 
 	// 文化資產搜尋欄

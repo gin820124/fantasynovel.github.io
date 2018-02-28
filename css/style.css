@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	transition: all .2s;
+	font-family: PingFang TC, 微軟正黑體, sans-serif;
 }
 
 
@@ -136,7 +137,7 @@
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
 	color: rgba(0, 0, 0, 0.6);
 	position: absolute;
-	top: -137px;
+	top: -160px;
 	z-index: 10;
 	transition: top 0.3s;
 

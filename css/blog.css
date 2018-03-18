@@ -210,6 +210,10 @@ ul.ulText li.liText:first-child{
 	margin-bottom: 25px;
 }
 
+.articles img{
+	margin: 30px 0;
+}
+
 .card{
 	height: 300px;
 	margin-top: 10px;

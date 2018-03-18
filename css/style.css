@@ -192,10 +192,14 @@
 .manual{
 	width: 100%;
 	margin-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 35px;
 	background: #F19483;
 	height: auto;
 	text-align: center;
+}
+
+.manual img{
+	margin-top: 30px;
 }
 
 .title{
@@ -223,6 +227,10 @@
 	margin-top: 10px;
 	background: #fff;
 	text-align: center;
+}
+
+.articles img{
+	padding: 20px 0;
 }
 
 .card{
@@ -298,6 +306,18 @@
 	background: rgba(255, 186, 132, 0.3);
 	height: auto;
 	text-align: center;
+}
+
+.explore img, .hot img{
+	padding: 25px 0;
+}
+
+.explore img{
+	margin-top: 10px;
+}
+
+.hot img{
+	margin-top: 5px;
 }
 
 .search-box{
@@ -667,11 +687,6 @@ hr{
 	.explore{
 	width: 100%;
 	margin-top: 5px;
-	}
-
-	.title2{
-	padding-top: 0;
-	width: 160px;	
 	}
 
 	.search-place{

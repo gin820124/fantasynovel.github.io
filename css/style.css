@@ -738,6 +738,10 @@ hr{
 	.menu .logo{
 		padding-right: 0;
 	}
+	.bannerImg figure img{
+    	     height: 480px;
+    	     width: 100vw;
+        }
 
 }
 
@@ -762,7 +766,8 @@ hr{
         }
 
         .bannerImg figure img{
-    	height: 320px;
+    	 height: 320px;
+         width: 100vw;
         }
 	
 	.show1{

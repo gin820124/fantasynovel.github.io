@@ -160,6 +160,7 @@
 
 .bannerImg > figure{
 	position: absolute;
+	width: 100vw;
 }
 
 

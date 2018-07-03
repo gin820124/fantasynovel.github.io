@@ -152,25 +152,14 @@
 /*Banner*/
 
 .bannerImg{
-	position: static;
+	position: relative;
 	height: 650px;	
-	background:  url(../img/靜態桌布月曆-07.png) no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	transition-duration: 2s;
-	transition-timing-function: ease-in-out;
 }
 
-.bannerImg:hover{
-	position: static;
-	height: 650px;	
-	background:  url(../img/靜態桌布月曆-03.jpg) no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center;
-	transition-duration: 2s;
-	transition-timing-function: ease-in-out;
+.bannerImg > figure{
+	position: absolute;
 }
 
 

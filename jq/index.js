@@ -12,6 +12,19 @@ $('.dropMenu a').click(function(){
 	$('.dropMenu').removeClass('dropMenu-collapsed')
 });
 
+// slider
+$("#slideshow > figure:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > figure:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
 	// 文化資產搜尋欄
 	// 全選
 $('#all').click(function(){

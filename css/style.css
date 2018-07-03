@@ -36,7 +36,7 @@
 }
 
 .menu .logo{
-	display: inline-block;
+	padding-right: 40px;
 }
 
 .menu ul li,

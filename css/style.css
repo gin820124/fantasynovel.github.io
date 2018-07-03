@@ -756,6 +756,14 @@ hr{
 	.menu .logo{
 		padding-right: 0;
 	}
+	.bannerImg{
+	position: relative;
+	height: 300px;
+        }
+
+        .bannerImg figure img{
+    	height: 320px;
+        }
 	
 	.show1{
 	position: relative;

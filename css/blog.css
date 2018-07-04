@@ -35,7 +35,7 @@
 }
 
 .menu .logo{
-	display: inline-block;
+	padding-right: 40px;
 }
 
 .menu ul li,
@@ -117,7 +117,7 @@ ul.ulText li.liText:first-child{
 
 .button-search{
 	position: absolute;
-	top: 16px;
+	top: 14px;
 	right: 40px;
 	border: none;
 	background: transparent;

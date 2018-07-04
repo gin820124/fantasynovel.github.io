@@ -240,45 +240,46 @@
 }
 
 .img1{
-		height: 100%;
-		width: 100%;
-		background: url(../img/台博館.jpg);
-		background-position: center;
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
-		border-radius: 5px;
-		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-		
-
+	height: 100%;
+	width: 100%;
+	background: url(../img/台博館.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	transition: all .3s ease-in-out;
 }
 
 .img1:hover, .img2:hover, .img3:hover{
-	-webkit-background-size: auto 110% ;
-	background-size: auto 110%;
-	transition: all .2s ease-in;
+	-webkit-background-size: 115%;
+	background-size: 115%;
+	transition: all .3s ease-in-out;
+
 }
 
 .img2{
-		height: 100%;
-		width: 100%;
-		background: url(../img/世界遺產潛力點.jpg);
-		background-position: center;
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
-		box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
-		border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	background: url(../img/世界遺產潛力點.jpg);
+	background-position: center;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+	border-radius: 5px;
 
 }
 
 .img3{
-		height: 100%;
-		width: 100%;
-		background: url(../img/世界遺產.jpg);
-		background-position: center;
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
-		border-radius: 5px;
-		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	height: 100%;
+	width: 100%;
+	background: url(../img/世界遺產.jpg);
+	background-position: center;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 
 }
 
@@ -357,8 +358,8 @@
 }
 
 [name=county]{
-	width: 15%;
-	margin-right: 8px;
+    width: 15%;
+    margin-right: 8px;
     margin-top: 0;
     font-size: 16px;
     border: 0 solid #ccc;
@@ -794,7 +795,22 @@ hr{
     	height: 800px;
     	overflow: hidden;
     	object-fit: cover;
-    }
+   	}
+        .img1, .img2, .img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 100%;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover, .img3:hover{
+		-webkit-background-size: 120%;
+		background-size: 120%;
+	}
 }
 
 

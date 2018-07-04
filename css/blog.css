@@ -29,6 +29,7 @@
 /*上方選單*/
 
 .menu{
+	display: flex;
 	line-height: 50px;
 	font-size: 20px;
 }
@@ -39,7 +40,8 @@
 
 .menu ul li,
 .menu ul{
-	display: inline-block;
+        display: flex;
+        justify-content: center;
 	margin-bottom: 0;
 }
 
@@ -74,10 +76,10 @@ ul.ulText li.liText:first-child{
 }
 
 .menu ul .ulTextMenu{
-	width: 180px;
+	width: 170px;
+	top: 52px;
 	height: auto;
-	background: rgba(255, 255, 255, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	background: rgba(255, 255, 255, 0.95);
 	color: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	display: none;
@@ -85,7 +87,7 @@ ul.ulText li.liText:first-child{
 	transition: top 0.3s;
 	font-size: 14px;
 	line-height: 24px;
-
+	text-align: center;
 }
 
 .menu ul .ulTextMenu li{

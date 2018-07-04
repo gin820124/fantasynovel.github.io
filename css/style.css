@@ -484,11 +484,12 @@ hr{
 }
 
 .right-button{
-	position: relative;
+    position: relative;
     color: #888;
     height: 320px;
     float:right;
     display: block;
+    padding-right: 30px;
 }
 .hiddenMe{
 	display: none;

@@ -470,6 +470,9 @@ ul.ulText li.liText:first-child{
 
 /*手機*/
 @media (max-width: 480px) {
+	.menu .logo {
+    		padding-right: 0px;
+	}
 	/*nav-bar icon*/
 	.temple {
 		height: 20px;

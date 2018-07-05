@@ -101,7 +101,7 @@ ul.ulText li.liText:first-child{
 }
 
 #search{
-	width: 100%;
+    width: 100%;
     position: relative;
     padding: 10px;
     float:right;
@@ -140,8 +140,7 @@ ul.ulText li.liText:first-child{
 	letter-spacing: 3px;
 	width: 100vw;
 	height: auto;
-	background: rgba(255, 255, 255, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+	background: rgba(255, 255, 255, 0.9);
 	color: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	top: -160px;
@@ -250,33 +249,33 @@ ul.ulText li.liText:first-child{
 
 .img1{
 		height: 100%;
-		width: auto;
+		width: 100%;
 		background: url(../img/prada2.jpg);
 		background-position: center;
-		-webkit-background-size: cover;
-		background-size: cover;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 		border-radius: 5px;
 		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-		
-
+		background-repeat: no-repeat;
+		transition: all .3s ease-in-out;		
 }
 
 .img1:hover, .img2:hover, .img3:hover{
-	-webkit-background-size: auto 110%;
-	background-size: auto 110%;
-	transition: all .5s ease-in;
+	-webkit-background-size: 115%;
+	background-size: 115%;
 }
 
 .img2{
 		height: 100%;
 		width: 100%;
-		background: url(../img/華山.JPG);
+		background: url(../img/華山.jpg);
 		background-position: center;
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 		box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
 		border-radius: 5px;
-
+		transition: all .3s ease-in-out;
+		background-repeat: no-repeat;
 }
 
 .img3{
@@ -284,13 +283,13 @@ ul.ulText li.liText:first-child{
 		width: 100%;
 		background: url(../img/台北機廠4.jpg);
 		background-position: center;
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 		border-radius: 5px;
 		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-
+		transition: all .3s ease-in-out;
+		background-repeat: no-repeat;
 }
-
 /*更多文章前的banner*/
 .banner2{
 	height: 300px;
@@ -459,6 +458,21 @@ ul.ulText li.liText:first-child{
 		left: 13%;
     	transform: translateX(-50%);
 
+	}
+	.img1, .img2, .img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 130%;
+		background-repeat: no-repeat;
+		background-size: 130%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover, .img3:hover{
+		-webkit-background-size: 150%;
+		background-size: 150%;
 	}
 	
 }

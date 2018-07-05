@@ -432,6 +432,40 @@ ul.ulText li.liText:first-child{
 	
 
 }
+/*筆電*/
+@media (min-width: 992px) and (max-width: 1440px){
+	.img1, .img2{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 110%;
+		background-repeat: no-repeat;
+		background-size: 110%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+
+	.img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 125%;
+		background-repeat: no-repeat;
+		background-size: 125%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover{
+		-webkit-background-size: 130%;
+		background-size: 130%;
+	}
+	.img3:hover{
+		-webkit-background-size: 145%;
+		background-size: 145%;
+	}
+}
 
 /*手機*/
 @media (max-width: 480px) {

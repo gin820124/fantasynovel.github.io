@@ -295,29 +295,112 @@ ul.ulText li.liText:first-child{
 		transition: all .3s ease-in-out;
 		background-repeat: no-repeat;
 }
-/*更多文章前的banner*/
-.banner2{
-	height: 300px;
-	margin-bottom: 0px;
-
-}
-
-.b2Img{
-	height: 300px;
-	background-image: url(../img/cropsyard1.jpg);
-	background-position: center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-
 
 /*更多文章*/
-.feed{
-	margin-bottom: 10px;
+.newsfeed{
 	text-align: center;
-	background: rgba(241, 148, 131, .3);
+	padding: 10px 0;
+	color: rgba(0, 0, 0, 0.6);
 }
+
+.headline-wrap{
+	padding: 30px 10px 30px 30px;
+	height: 50vh;
+	border-radius: 20%;
+}
+
+.headline-wrap img{	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.headline-sum{
+	padding-top: 30px;
+	padding-right: 30px;
+	vertical-align: middle;
+}
+.headline-sum h2{
+	padding-bottom: 15px;
+}
+
+.headline-sum p{
+	padding-top: 10px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.tags{
+	margin-top: 50px;
+}
+
+.tags ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+.tags li{
+    margin: 10px;
+    background: #eb7a77;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.feed{
+	display: flex;
+	justify-content: center;
+}
+.feed1{
+	width: 30vw;
+	background: #F4f4f4;
+	border-radius: 10px;
+	margin: 0px 17px;
+}
+
+figure{
+	height: 300px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.feed1 img{
+	margin-top: 16px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+
+.line{
+	width: 42px;
+	height: 1px;
+	border: 2px solid #aaa;
+	margin: 10px auto;
+	transition: all .3s;
+}
+
+.feed1:hover .line,  .headline-sum:hover .line{
+	width: 80%;
+	border: 2px solid #EB7A77;
+}
+.feed1 h3{
+	transition: all .3s;
+}
+.feed1 h3:hover{
+	color: #EB7A77;
+}
+
+figcaption p{
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0px 20px;
+	padding-bottom: 20px;
+}
+
 
 
 /*footer*/
@@ -363,8 +446,6 @@ ul.ulText li.liText:first-child{
 	color: #EB7A77;
 }
 
-
-
 /*平版*/
 @media (max-width: 767px) {
 	.ulText{
@@ -384,29 +465,28 @@ ul.ulText li.liText:first-child{
 		position: absolute;
 		width: 400px;
 		top: 300px;
-    	left: 50%;
-    	transform: translateX(-50%);
-
+    		left: 50%;
+    		transform: translateX(-50%);
 	}
 	.hTitle{
-	position: absolute;
-	top: 168px;
-    right: -26px;
-	border: transparent;
-	font-size: 20px;
-	text-align: center;
-	white-space: nowrap;
+		position: absolute;
+		top: 168px;
+		right: -26px;
+		border: transparent;
+		font-size: 20px;
+		text-align: center;
+		white-space: nowrap;
 	}
 
 	.headline{
-	position: absolute;
-	background: #F17C67;
-	top: 90px;
-	color: #fff;
-	letter-spacing: 3px;
-    right: 15%;
-    white-space: nowrap;
-    width: 247px;
+		position: absolute;
+		background: #F17C67;
+		top: 90px;
+		color: #fff;
+		letter-spacing: 3px;
+	    	right: 15%;
+	    	white-space: nowrap;
+	   	width: 247px;
 	}
 
 	.headline h3{
@@ -428,11 +508,6 @@ ul.ulText li.liText:first-child{
 	}
 }
 
-/*平板*/
-@media (min-width: 767px) and (max-width: 992px){
-	
-
-}
 /*筆電*/
 @media (min-width: 992px) and (max-width: 1440px){
 	.img1, .img2{
@@ -467,6 +542,97 @@ ul.ulText li.liText:first-child{
 		background-size: 145%;
 	}
 }
+@media (min-width: 992px) and (max-width: 1200px){
+	.menu .logo{
+		padding-right: 25px;
+	}
+	.img1, .img2{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 135%;
+		background-repeat: no-repeat;
+		background-size: 135%;
+		border-radius: 5px;
+		transition: all .5s ease-in;
+	}
+
+	.img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 145%;
+		background-repeat: no-repeat;
+		background-size: 145%;
+		border-radius: 5px;
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover{
+		-webkit-background-size: 150%;
+		background-size: 150%;
+	}
+	.img3:hover{
+		-webkit-background-size: 160%;
+		background-size: 160%;
+	}
+	.feed1{
+		height: 490px;
+	}
+}
+/*平板*/
+@media (min-width: 767px) and (max-width: 992px){
+	.img1, .img2{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 120%;
+		background-repeat: no-repeat;
+		background-size: 120%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+
+	.img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 125%;
+		background-repeat: no-repeat;
+		background-size: 125%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover{
+		-webkit-background-size: 130%;
+		background-size: 130%;
+	}
+	.img3:hover{
+		-webkit-background-size: 145%;
+		background-size: 145%;
+	}
+	.headline-sum{
+		padding-top: 0;
+	}
+	.headline-wrap{
+		padding: 20px 10px;
+	}
+
+	.tags{
+		margin: 10px 0px;
+	}
+	
+	.feed1{
+		height: 410px;
+		margin: 0 10px;
+	}
+
+	figure{
+	height: 200px;
+	overflow: hidden;
+    }
+}
 
 /*手機*/
 @media (max-width: 480px) {
@@ -487,8 +653,8 @@ ul.ulText li.liText:first-child{
 		position: absolute;
 		width: 300px;
 		top: 125px;
-    	left: 50%;
-    	transform: translateX(-50%);
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	
 	.hTitle{
@@ -498,7 +664,7 @@ ul.ulText li.liText:first-child{
 		text-align: center;
 		padding-top: 10px;
 		left: 13%;
-    	transform: translateX(-50%);
+		transform: translateX(-50%);
 
 	}
 	.img1, .img2, .img3{
@@ -516,9 +682,41 @@ ul.ulText li.liText:first-child{
 		-webkit-background-size: 150%;
 		background-size: 150%;
 	}
+	.tags{
+		margin-top: 20px;
+	}
+	.tags li{
+		margin: 8px;
+	}
+	.headline-wrap{
+		height: 250px;
+		padding: 20px 15px;
+		border-radius: 4px;
+	}
+
+	.headline-sum{
+		padding: 0 15px;
+	}
+	.headline-sum h2{
+		padding-top: 10px;
+	}
+	.feed1 {
+	    width: 90vw;
+	    background: #F4f4f4;
+	    border-radius: 10px;
+	    margin: 10px 10px;
+	 }
+	 figure{
+	    height: 180px;
+	 }
 	
 }
-
+@media (max-width: 320px) {
+	.logoText{
+		width: 80px;
+		height: 12px;
+	}
+}
 
 
 

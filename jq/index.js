@@ -4,12 +4,63 @@ $('li.liText').click(function(){
 	$('.ulTextMenu-collapsed').parents("li.liText").not(this).find('.ulTextMenu-collapsed').removeClass('ulTextMenu-collapsed');
 });
 
-// 平板以下漢堡下拉選單
-$('.drop').click(function(){
-	$('.dropMenu').toggleClass('dropMenu-collapsed');
+// back to top button
+$(".back_btn img").on({
+ "mouseover" : function() {
+    this.src = 'img/btt3.png';
+  },
+  "mouseout" : function() {
+    this.src='img/btt2.png';
+  }
 });
-$('.dropMenu a').click(function(){
-	$('.dropMenu').removeClass('dropMenu-collapsed')
+
+// 偵測 nav
+var scrollLast = 0;
+        $(window).scroll(function(){
+            var scrollTop = $(this).scrollTop();
+            console.log(scrollTop);
+            // 上一次滑動（scrollLast）的數值比較大時
+            if (scrollTop < scrollLast) {
+                $("#nav").removeClass('hide_nav');
+            } else {
+                $("#nav").addClass('hide_nav');
+            }
+            scrollLast = scrollTop;
+        });
+
+        // 偵測 back to top 按鈕何時出現
+        if ($('.back_btn').length) {
+                var scrollTrigger = 1000, // px
+                    backToTop = function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > scrollTrigger) {
+                            $('.back_btn').addClass('show');
+                        } else {
+                            $('.back_btn').removeClass('show');
+                        }
+                    };
+                backToTop();
+                $(window).on('scroll', function () {
+                    backToTop();
+                });
+                $('.back_btn').on('click', function (e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 500);
+                });
+            }
+// 平板以下漢堡下拉選單，點按選單旁邊，選單要自行收合
+function closeMenu(){
+	$('.dropMenu').removeClass('dropMenu-collapsed');
+}
+
+$('body').click(function(e){
+	closeMenu();
+});
+$('.drop').click(function(e){
+	e.stopPropagation();
+	$('.dropMenu').toggleClass('dropMenu-collapsed');
 });
 
 // slider

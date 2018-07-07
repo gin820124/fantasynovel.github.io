@@ -176,7 +176,7 @@ ul.ulText li.liText:first-child{
 	background: rgba(255, 255, 255, 0.9);
 	color: rgba(0, 0, 0, 0.6);
 	position: absolute;
-	top: -160px;
+	display: none;
 	z-index: 10;
 	transition: top 0.3s;
 
@@ -184,7 +184,9 @@ ul.ulText li.liText:first-child{
 
 .dropMenu-collapsed{
 	top: 50px;
-    list-style: none;
+	display: block;
+       list-style: none;
+       transition: top 0.3s;
 }
 
 /*Banner1*/

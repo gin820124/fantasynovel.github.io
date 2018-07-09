@@ -762,6 +762,10 @@ figcaption p{
 		height: 52vh;
 	}
 }
-
+@media screen (min-width: 1440px) {
+	.top-img{
+		height: 52vh;
+	}
+}
 
 

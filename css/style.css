@@ -836,6 +836,10 @@ hr{
 	.menu .logo{
 		padding-right: 0;
 	}
+	.bannerImg{
+	position: relative;
+	height: 450px;
+    	}
 	.bannerImg figure img{
     	     height: 480px;
     	     width: 100vw;

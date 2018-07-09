@@ -832,20 +832,58 @@ hr{
 }
 
 /*平板*/
-@media (min-width: 767px) and (max-width: 992px){
-	.menu .logo{
+@media (min-width: 768px) and (max-width: 992px){
+    .menu .logo{
 		padding-right: 0;
-	}
+	}	
 	.bannerImg{
 	position: relative;
 	height: 450px;
-    	}
-	.bannerImg figure img{
-    	     height: 480px;
-    	     width: 100vw;
-        }
+    }
 
+    .bannerImg figure img{
+    	height: 480px;
+    	width: 100vw;
+    }
+    .img1, .img2, .img3{
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		-webkit-background-size: 100%;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+		transition: all .5s ease-in;
+	}
+	.img1:hover, .img2:hover, .img3:hover{
+		-webkit-background-size: 120%;
+		background-size: 120%;
+	}
+	[name=county]{
+		width: 39%;
+	}
+	.search-place{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.bannerContent{
+		right: 127px;
+	}
+	#search{
+		width: 50%;
+	}
+	.drop{
+	   right: 50%;
+	}
+	.box1{
+		transform: translateX(17%);
+		margin: auto;
+		width: 400px;
+	}
 }
+
+
 
 /*手機*/
 @media (max-width: 480px) {

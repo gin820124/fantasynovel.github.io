@@ -671,6 +671,23 @@ hr{
   background-image: url('../img/foto6.jpg')
 }
 
+/* chart */
+.h_chart{
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.h_chart canvas{
+	padding: 20px;
+}
+
+.h_chart p{
+	margin-top: 15px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
 /*footer*/
 
 .footer{

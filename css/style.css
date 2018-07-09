@@ -28,6 +28,10 @@ button:focus, input:focus{
 	outline:0;
 }
 
+select:focus{
+	outline: 0;
+}
+
 .back_btn{
 	position: fixed;
 	right: 10px;

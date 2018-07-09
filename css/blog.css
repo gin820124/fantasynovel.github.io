@@ -13,6 +13,10 @@ button:focus, input:focus{
 	outline:0;
 }
 
+h2, h3{
+	font-weight: 600;
+}
+
 .back_btn{
 	position: fixed;
 	right: 10px;
@@ -535,6 +539,17 @@ figcaption p{
 
 	.footLogo{
 	display: none;
+	}
+}
+
+/*平版*/
+@media (min-width: 768px) {
+	#search{
+		width: 50%;
+	}
+
+	.drop{
+	   right: 50%;
 	}
 }
 

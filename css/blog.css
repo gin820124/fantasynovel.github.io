@@ -605,6 +605,9 @@ figcaption p{
 		-webkit-background-size: 145%;
 		background-size: 145%;
 	}
+	.headline-wrap {
+    		padding: 30px 10px 30px 0px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	.menu .logo{
@@ -641,6 +644,9 @@ figcaption p{
 	}
 	.feed1{
 		height: 490px;
+	}
+	.tags {
+    		margin-top: 15px;
 	}
 }
 /*平板*/
@@ -680,7 +686,7 @@ figcaption p{
 		padding-top: 0;
 	}
 	.headline-wrap{
-		padding: 20px 10px;
+		padding: 20px 0px;
 	}
 
 	.tags{
@@ -695,7 +701,11 @@ figcaption p{
 	figure{
 	height: 200px;
 	overflow: hidden;
-    }
+    	}
+	
+	.headline-wrap .top-img{
+    	height: 35vh;
+    	}
 }
 
 /*手機*/
@@ -750,11 +760,11 @@ figcaption p{
 		margin-top: 20px;
 	}
 	.tags li{
-		margin: 8px;
+		margin: 5px;
 	}
 	.headline-wrap{
 		height: 250px;
-		padding: 20px 15px;
+		padding: 20px 0 0 0;
 		border-radius: 4px;
 	}
 
@@ -762,7 +772,7 @@ figcaption p{
 		padding: 0 15px;
 	}
 	.headline-sum h2{
-		padding-top: 10px;
+		padding-top: 0;
 	}
 	.feed1 {
 	    width: 90vw;
@@ -773,18 +783,22 @@ figcaption p{
 	 figure{
 	    height: 180px;
 	 }
+	.top-img{
+    	   padding-bottom: 15px;
+    	}
 	
 }
 @media (max-width: 320px) {
 	.logoText{
 		width: 80px;
-		height: 52vh;
+		height: 12px;
 	}
 }
-@media screen (min-width: 1440px) {
-	.top-img{
-		height: 52vh;
+@media (min-width: 1440px){
+	.headline-wrap .top-img{
+		height: 40vh;
 	}
 }
+
 
 

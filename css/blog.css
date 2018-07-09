@@ -759,7 +759,7 @@ figcaption p{
 @media (max-width: 320px) {
 	.logoText{
 		width: 80px;
-		height: 12px;
+		height: 52vh;
 	}
 }
 

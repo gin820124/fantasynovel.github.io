@@ -606,7 +606,7 @@ figcaption p{
 		background-size: 145%;
 	}
 	.headline-wrap {
-    		padding: 30px 10px 30px 0px;
+    		padding: 30px 10px 30px 15px;
 	}
 }
 @media (min-width: 992px) and (max-width: 1200px){

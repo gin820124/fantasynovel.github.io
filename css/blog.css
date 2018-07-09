@@ -796,7 +796,7 @@ figcaption p{
 }
 @media (min-width: 1440px){
 	.headline-wrap .top-img{
-		height: 40vh;
+		height: 40vh !important;
 	}
 }
 
